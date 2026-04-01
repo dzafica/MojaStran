@@ -86,6 +86,7 @@ body {
 /* Za pravokotnik (Naslov 4) */
 .rectangle {
     height: 100%;
+    aspect-ratio: auto;
 }
 
 /* Poravnave */
@@ -199,6 +200,7 @@ body {
     padding: 20px;
 }
 
+
 /* Mobile tweaks */
 @media (max-width: 768px) {
     .hero {
@@ -213,6 +215,31 @@ body {
         flex: 0 0 33.333%;
         /* 3 v vrsti na manjših zaslonih */
         max-width: 33.333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .rectangle {
+        aspect-ratio: 1 / 1;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    nav .container>div[style*="position: absolute"] {
+        flex-direction: column !important;
+        text-align: right;
+        gap: 0.1rem !important;
+        font-size: 0.7rem;
+        right: 0;
+        top: 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Hide info text on small screens (phones) */
+    nav .container>div[style*="position: absolute"] {
+        display: none !important;
     }
 }
 
