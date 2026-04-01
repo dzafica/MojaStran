@@ -16,23 +16,31 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-0">
+        <div class="container d-flex justify-content-between align-items-center bg-light shadow-sm px-0"
+            style="border-radius: 0%;">
 
+            <a class="navbar-brand me-4" href="#">
+                <img src="./img/logo.png" width="50" alt="logo">
+            </a>
 
-    <!-- HERO -->
-    <section class="hero d-flex align-items-center text-white" style="margin-top: 56px;">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- top right contact -->
-        <div class="position-absolute top-0 end-0 p-3 text-end">
-            <div class="d-flex gap-3">
-                <p class="mb-0">
-                    <a href="mailto:info@gmail.com" class="text-white text-decoration-none">info@gmail.com</a>
-                </p>
-                <p class="mb-0">
-                    <a href="tel:+12312312223" class="text-white text-decoration-none">+123-123-122-23</a>
-                </p>
+            <div class="collapse navbar-collapse justify-content-end px-3" id="menu">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Domov</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Storitve</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Poletje</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Reference</a></li>
+                </ul>
             </div>
         </div>
-
+    </nav>
+    <!-- HERO -->
+    <section class="hero d-flex align-items-center text-white">
         <!-- centered content -->
         <div class="container">
             <div class="row">
@@ -45,35 +53,24 @@
                     </button>
                 </div>
             </div>
-        </div>
 
+            <div class="position-absolute top-0 end-0 px-0">
+                <div class="d-flex gap-3">
+                    <p class="mb-0">
+                        <a href="mailto:info@gmail.com" class="text-white text-decoration-none">info@gmail.com</a>
+                    </p>
+                    <p class="mb-0">
+                        <a href="tel:+12312312223" class="text-white text-decoration-none">+123-123-122-23</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- info -->
+
+
     <div class="container">
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
-            <div class="container justify-content-center position-relative">
-
-                <a class="navbar-brand me-4" href="#">
-                    <img src="./img/logo.png" width="50" alt="logo">
-                </a>
-
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-center" id="menu">
-                    <ul class="navbar-nav gap-3">
-                        <li class="nav-item"><a class="nav-link" href="#">Domov</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Storitve</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Poletje</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Reference</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
-
         <!-- TABLE SECTION - KVADRATI -->
         <section class="container text-center my-5">
             <h2>Za vas obstajamo od leta 1900</h2>
@@ -83,42 +80,39 @@
 
             <div class="container">
                 <!-- PRVA VRSTICA: Naslov 1, Naslov 2, prazno, Naslov 3 -->
-                <div class="row mb-4 g-3">
-                    <div class="col-12 col-md-3">
+                <!-- POMEMBNO: tle k spreminjamo velicino pro bootstrapu imamo tako: brez prefixa je fon, sm je za vecje telefone in manjse tablete, md je za tablete in manjse laptope, lg je za vecje laptope-->
+                <div class="row g-3 d-flex flex-wrap">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="blue-card square top-center">
                             <h4>Naslov 1</h4>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="blue-card square bottom-center">
                             <h4>Naslov 2</h4>
                         </div>
                     </div>
-                    <!--
-                <div class="col-12 col-md-3">
-                     prazno ali dodaj vsebino 
-                </div> -->
-                    <div class="col-12 col-md-3 offset-md-3">
+                    <div class="col-12 col-sm-6 col-md-3 ms-md-auto">
                         <div class="blue-card square right-corner">
                             <h4>Naslov 3</h4>
                         </div>
                     </div>
 
                     <!-- Druga vrsta -->
-                    <div class="col-12 col-md-6">
-                        <div class="blue-card rectangle top-center-wide " id="block4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="blue-card rectangle top-center-wide" id="block4">
                             <h4>Naslov 4</h4>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="blue-card square middle-center">
                             <h4>Naslov 5</h4>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-3">
+                    <div class="col-md-3 col-sm-6 col-md-3">
                         <div class="transparent-card square middle-center">
                             <div class="lines-container">
                                 <div class="line-row"><span class="line-content">Lorem ipsum</span></div>

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,17 +12,12 @@ body {
 
 /* HERO */
 .hero {
-    margin-top: -70px;
     padding-top: 70px;
     height: 700px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/background.jpg') center/cover no-repeat;
     position: relative;
 }
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
 
 /* Logo */
 .navbar-brand {
@@ -220,9 +216,11 @@ body {
     }
 }
 
-/*@media (max-width: 768px) {
+/*
+@media (max-width: 768px) {
     #block4{
         width: 50%;
         height: 50%;
     }
-}*/
+}
+    */
