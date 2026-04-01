@@ -41,9 +41,7 @@
                 </ul>
             </div>
 
-            <!-- Info text, absolutely positioned and "levitating" below -->
-            <!-- Info text, absolutely positioned and "levitating" below -->
-            <div style="position: absolute; right: 0; bottom: -30px; display: flex; gap: 1rem;">
+            <div id="info-text" style="position: absolute; right: 0; bottom: -30px; display: flex; gap: 1rem;">
                 <a href="tel:+123123123" class="text-light text-decoration-none">+123-123-123</a>
                 <a href="mailto:info@gmail.com" class="text-light text-decoration-none">info@gmail.com</a>
             </div>
@@ -166,6 +164,23 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- after hero information part disapears-->
+    <script>
+        const info = document.getElementById("info-text");
+        const hero = document.querySelector(".hero");
+
+        window.addEventListener("scroll", () => {
+            const heroBottom = hero.offsetTop + hero.offsetHeight;
+
+            if (window.scrollY > heroBottom - 80) {
+                info.style.opacity = "0";
+                info.style.pointerEvents = "none";
+            } else {
+                info.style.opacity = "1";
+                info.style.pointerEvents = "auto";
+            }
+        });
+    </script>
 </body>
 
 </html>

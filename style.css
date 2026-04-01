@@ -199,6 +199,10 @@ body {
     padding: 20px;
 }
 
+#info-text {
+    transition: opacity 0.3s ease;
+}
+
 
 /* Mobile tweaks */
 @media (max-width: 768px) {
